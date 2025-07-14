@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- <link rel="stylesheet" href="./main.css"> -->
+</head>
+
+<body class="bg-slate-900 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-slate-800  rounded-lg mx-auto max-w-5xl mt-6 shadow flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4">
+        <div class="flex items-center gap-3 mb-4 md:mb-0">
+            <span class="text-green-400 font-extrabold text-2xl">&lt;NK./&gt;</span>
+        </div>
+        <ul class="text-white flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto items-center">
+            <li><a href="#home" class="hover:text-green-300 font-semibold transition">Home</a></li>
+            <li><a href="#about" class="hover:text-green-300 font-semibold transition">About</a></li>
+            <li><a href="#projects" class="hover:text-green-300 font-semibold transition">Projects</a></li>
+            <li><a href="#skills" class="hover:text-green-300 font-semibold transition">Skills</a></li>
+            <li><a href="#contact" class="hover:text-green-300 font-semibold transition">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-2 sm:px-4 ">
+        <!-- Home Section -->
+        <section id="home" class="text-center mt-10 mb-8">
+            <div>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-400 mb-2 drop-shadow-lg inline-block">Hey!</h1>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-green-400 mb-4 drop-shadow-lg inline-block ml-4">I`m Naveen Kumar</h1>
+            </div>
+            <p class="text-lg text-green-200 mb-4">Welcome to my portfolio!</p>
+            <p class="text-slate-300 max-w-4xl text-center">
+                I am passionate about web development and design, always striving to create beautiful and functional digital experiences. Here you’ll find my projects, skills, and a little about me. I enjoy learning new technologies and collaborating on creative solutions. Thank you for visiting—let’s build something amazing together!
+            </p>
+            <!-- Center Resume Button (already centered, just ensure no extra margin/padding issues) -->
+            <div class="flex justify-center items-center w-full my-4">
+                <a href="resume.pdf" target="_blank" rel="noopener" class="inline-block">
+                    <button class="bg-gradient-to-r from-green-400 to-blue-400 text-white font-bold px-6 py-2 rounded-full shadow hover:from-green-500 hover:to-blue-500 transition duration-300 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17l4 4 4-4m-4-5v9" />
+                        </svg>
+                        View Resume
+                    </button>
+                </a>
+            </div>
+        </section>  <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-8" />
+
+        <!-- About Section -->
+        <section id="about" class="mb-8 text-center">
+            <div>
+            <h2 class="text-3xl font-bold text-green-400  inline-block mb-2">About </h2>
+            <h2 class="text-3xl font-bold inline-block text-blue-300 mb-2"> Me</h2>
+            <p class="text-slate-300 text-center max-w-5xl">
+                I am Naveen Kumar, a passionate and dedicated web developer with a keen interest in creating visually appealing and highly functional digital experiences. My journey in technology began with a curiosity for how websites work, which quickly evolved into a full-fledged passion for coding and design. Over the years, I have honed my skills in HTML, CSS, JavaScript, and modern frameworks like React and Vue, allowing me to build responsive and user-friendly web applications.<br><br>
+                I believe that great design is not just about aesthetics but also about usability and accessibility. My approach to web development combines creativity with a strong focus on user experience, ensuring that every project I undertake is both beautiful and intuitive. I enjoy collaborating with designers, developers, and clients to bring ideas to life, and I am always eager to learn new technologies and best practices to stay ahead in this ever-evolving field.<br><br>
+                In addition to my technical skills, I am a strong communicator and a reliable team player. I thrive in collaborative environments where ideas are shared freely, and I am always willing to lend a helping hand or offer feedback to improve a project. My attention to detail and commitment to quality drive me to deliver work that not only meets but exceeds expectations.<br><br>
+                Outside of coding, I enjoy exploring new design trends, reading about emerging technologies, and contributing to open-source projects. I am also passionate about personal growth and continuous learning, regularly taking online courses and attending workshops to expand my knowledge.<br><br>
+                Thank you for visiting my portfolio. I am excited to connect with like-minded professionals and explore opportunities to create impactful digital solutions together. Let’s build something amazing!
+            </p>
+        </section> <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-2" /> <br>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-8 text-center">
+            <h2 class="text-3xl font-bold text-green-300 mb-2">Projects</h2>
+            <div class="grid gap-6 md:grid-cols-2 "  >
+                <article class="bg-slate-800 rounded-lg p-6 shadow">
+                    <h3 class="font-bold text-xl text-green-200 mb-1">BloodBank Management</h3>
+                    <p class="text-slate-300">
+                        BloodBank Management is a web application built using Django that streamlines the process of blood donation and management. The project features a robust search functionality, allowing users to quickly find available blood donors based on blood group and location. Individuals can easily register as donors, making their profiles accessible to those in need. The application also includes essential features such as donor registration, donor listing, and basic management tools for administrators. This project aims to simplify the connection between donors and recipients, making the process efficient and user-friendly.
+                    </p>
+                    <!-- Fix GitHub logo placement in Projects section -->
+                    <!-- Replace each project link block like this: -->
+                    <a href="" class="flex items-center gap-2 mt-4 justify-center">
+                        <img src="github.png" class="h-8 w-8 hover:scale-110 transition" alt="GitHub Logo">
+                        <span class="text-green-300 font-semibold">Github Link</span>
+                    </a>
+                </article>
+                <article class="bg-slate-800 rounded-lg p-6 shadow">
+                    <h3 class="font-bold text-xl text-green-200 mb-1">Task Tracker App</h3>
+                    <p class="text-slate-300">
+                        Task Tracker App is a productivity tool built with React and Firebase. It allows users to create, edit, and delete tasks, set deadlines, and organize their workflow efficiently. Real-time updates and notifications help users stay on top of their daily goals. The app features a clean UI, drag-and-drop task management, and user authentication for secure access.
+                    </p>
+                    <a href="" class="flex items-center gap-2 mt-4 justify-center">
+                        <img src="github.png" class="h-8 w-8 hover:scale-110 transition" alt="GitHub Logo">
+                        <span class="text-green-300 font-semibold">Github Link</span>
+                    </a>
+                </article>
+                <article class="bg-slate-800 rounded-lg p-6 shadow">
+                    <h3 class="font-bold text-xl text-green-200 mb-1">Portfolio Website</h3>
+                    <p class="text-slate-300">
+                        Portfolio Website is a personal branding project developed using Vue.js and Tailwind CSS. It showcases professional experience, skills, and projects in a visually appealing manner. The site is fully responsive, optimized for SEO, and includes a contact form for potential clients or employers to reach out. Custom animations and interactive sections enhance user engagement.
+                    </p>
+                    <a href="" class="flex items-center gap-2 mt-4 justify-center">
+                        <img src="github.png" class="h-8 w-8 hover:scale-110 transition" alt="GitHub Logo">
+                        <span class="text-green-300 font-semibold">Github Link</span>
+                    </a>
+               
+                </article>
+            </div>
+        </section> <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-8" /><br>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-8 text-center">
+            <h2 class="text-3xl font-bold text-green-300 mb-2">Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-slate-200">
+                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">HTML</div>
+                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">Tailwind CSS</div>
+                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">JavaScript</div>
+                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">React</div>
+                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">Vue</div>
+                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">Django</div>
+            </div>
+        </section> <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-8" /><br>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-8 text-center">
+            <h2 class="text-3xl font-bold text-green-300 mb-2">Contact</h2>
+            <div class="max-w-md mx-auto rounded-lg bg-slate-800 p-6 shadow">
+                <div class="flex items-center justify-around gap-4">
+                    <a href="https://www.linkedin.com/in/naveenkumar2013" target="_blank" aria-label="LinkedIn">
+                        <img src="linkdin.png" alt="LinkedIn" class="h-8 w-8 hover:scale-110 transition" />
+                    </a>
+                    <a href="https://github.com/nn0343424" target="_blank" aria-label="GitHub">
+                        <img src="github.png" alt="GitHub" class="h-8 w-8 hover:scale-110 transition" />
+                    </a>
+                    <a href="mailto:naveenkumar1307@yahoo.com" aria-label="Email">
+                        <img src="email.png" alt="Email" class="h-8 w-8 hover:scale-110 transition" />
+                    </a>
+                    <a href="https://wa.me/+918317442013" aria-label="Whatsapp">
+                        <img src="whastapp.png" alt="Whatsapp" class="h-8 w-8 hover:scale-110 transition" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-5xl mx-auto my-8 p-4 bg-slate-800 text-center rounded shadow text-green-300">
+        <p>&copy; 2025 Naveen Kumar. All rights reserved.</p>
+        <p>Made With Love</p>
+    </footer>
+</body>
+
+</html>
