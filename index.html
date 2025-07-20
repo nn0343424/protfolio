@@ -7,27 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- <link rel="stylesheet" href="./main.css"> -->
+    <div class="fixed top-0 left-0 right-0 h-1 bg-green-500 z-50 origin-left" style="transform: scaleX(0.15000);"></div>
 </head>
 
 <body class="bg-slate-900 font-sans">
-    <!-- Navigation Bar -->
-    <nav class="bg-slate-800  rounded-lg mx-auto max-w-5xl mt-6 shadow flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4">
+    <div id="scroll-bar" class="fixed top-0 left-0 right-0 h-1 bg-green-500 z-50 origin-left" style="transform: scaleX(0);"></div>
+    <nav class="bg-slate-800 rounded-lg mx-auto max-w-5xl mt-6 shadow flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4">
         <div class="flex items-center gap-3 mb-4 md:mb-0">
             <span class="text-green-400 font-extrabold text-2xl">&lt;NK./&gt;</span>
         </div>
         <ul class="text-white flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto items-center">
-            <li><a href="#home" class="hover:text-green-300 font-semibold transition">Home</a></li>
-            <li><a href="#about" class="hover:text-green-300 font-semibold transition">About</a></li>
-            <li><a href="#projects" class="hover:text-green-300 font-semibold transition">Projects</a></li>
-            <li><a href="#skills" class="hover:text-green-300 font-semibold transition">Skills</a></li>
-            <li><a href="#contact" class="hover:text-green-300 font-semibold transition">Contact</a></li>
+            <li class="inline-flex items-center gap-1">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_15_3)">
+                        <rect width="24" height="24" fill="white"/>
+                        <path d="M9 21H4C3.44772 21 3 20.5523 3 20V12.4142C3 12.149 3.10536 11.8946 3.29289 11.7071L11.2929 3.70711C11.6834 3.31658 12.3166 3.31658 12.7071 3.70711L20.7071 11.7071C20.8946 11.8946 21 12.149 21 12.4142V20C21 20.5523 20.5523 21 20 21H15M9 21H15M9 21V15C9 14.4477 9.44772 14 10 14H14C14.5523 14 15 14.4477 15 15V21" stroke="#000000" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_15_3">
+                            <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <a href="#home" class="hover:text-green-300 font-semibold transition">Home</a>
+            </li>
+
+            <li class="inline-flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4" stroke-linecap="round" stroke-linejoin="round"/><path stroke-linecap="round" stroke-linejoin="round" d="M5.5 21a7 7 0 0113 0" /></svg>
+                <a href="#about" class="hover:text-green-300 font-semibold transition">About</a>
+            </li>
+            <li class="inline-flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/><path stroke-linecap="round" stroke-linejoin="round" d="M16 3h-8v4h8V3z" /></svg>
+                <a href="#projects" class="hover:text-green-300 font-semibold transition">Projects</a>
+            </li>
+            <li class="inline-flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 12l2 2 4-4" /></svg>
+                <a href="#skills" class="hover:text-green-300 font-semibold transition">Skills</a>
+            </li>
+            <li class="inline-flex items-center gap-1">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 72 72" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet"><path fill="white" d="M49.6 56c0-3.2-.4-4-3.9-4.3c-.6 0-1-.5-1-1.1V49c0-.4.2-.8.6-1c4.3-2.9 7.1-7.8 7.1-13.3l.1-.7c.1-.5.5-.9 1-1c1.4-.3 2.6-1.4 2.9-2.8c.4-2.1-1-3.9-2.9-4.3c-.3-.1-.5-.4-.5-.7l.4-6.4c.2-24.5-35.3-24.8-35.5-.4l.6 7c0 .3-.1.5-.4.6c-1.6.6-2.7 2.4-2.2 4.3c.3 1.3 1.6 2.2 3 2.6c.6.1 1 .6 1 1.2v.6c0 5.6 2.9 10.6 7.3 13.5c.2.1.3.3.3.5v2c0 .5-.4 1-1 1c-3.6.2-4 1.1-4.1 4.2c-.1.1-.2.3-.3.4c-6 2.5-10.4 6.1-10.2 14.8c0 .5.4.9 1 .9h46.2c.5 0 1-.4 1-.9c.1-8.7-4.1-12-10.1-14.6c-.1-.2-.2-.3-.4-.5z"/></svg>
+
+                <a href="#contact" class="hover:text-green-300 font-semibold transition">Contact</a>
+            </li>
         </ul>
     </nav>
 
+
     <main class="max-w-5xl mx-auto px-2 sm:px-4 ">
-        <!-- Home Section -->
         <section id="home" class="text-center mt-10 mb-8">
             <div>
                 <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-400 mb-2 drop-shadow-lg inline-block">Hey!</h1>
@@ -37,47 +63,61 @@
             <p class="text-slate-300 max-w-4xl text-center">
                 I am passionate about web development and design, always striving to create beautiful and functional digital experiences. Here you’ll find my projects, skills, and a little about me. I enjoy learning new technologies and collaborating on creative solutions. Thank you for visiting—let’s build something amazing together!
             </p>
-            <!-- Center Resume Button (already centered, just ensure no extra margin/padding issues) -->
             <div class="flex justify-center items-center w-full my-4">
                 <a href="resume.pdf" target="_blank" rel="noopener" class="inline-block">
-                    <button class="bg-gradient-to-r from-green-400 to-blue-400 text-white font-bold px-6 py-2 rounded-full shadow hover:from-green-500 hover:to-blue-500 transition duration-300 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17l4 4 4-4m-4-5v9" />
-                        </svg>
+                    <button class="bg-gradient-to-r from-green-400 to-blue-400 text-white font-bold px-6 py-2 rounded-full shadow hover:from-pink-500 hover:to-blue-500 transition duration-300 flex items-center gap-2">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+<circle cx="12" cy="12" r="3.5" stroke="#222222"/>
+<path d="M20.188 10.9343C20.5762 11.4056 20.7703 11.6412 20.7703 12C20.7703 12.3588 20.5762 12.5944 20.188 13.0657C18.7679 14.7899 15.6357 18 12 18C8.36427 18 5.23206 14.7899 3.81197 13.0657C3.42381 12.5944 3.22973 12.3588 3.22973 12C3.22973 11.6412 3.42381 11.4056 3.81197 10.9343C5.23206 9.21014 8.36427 6 12 6C15.6357 6 18.7679 9.21014 20.188 10.9343Z" stroke="#222222"/>
+</svg>
                         View Resume
                     </button>
                 </a>
             </div>
-        </section>  <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-8" />
+        </section>
+        <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-8" />
 
-        <!-- About Section -->
         <section id="about" class="mb-8 text-center">
             <div>
-            <h2 class="text-3xl font-bold text-green-400  inline-block mb-2">About </h2>
-            <h2 class="text-3xl font-bold inline-block text-blue-300 mb-2"> Me</h2>
-            <p class="text-slate-300 text-center max-w-5xl">
-                I am Naveen Kumar, a passionate and dedicated web developer with a keen interest in creating visually appealing and highly functional digital experiences. My journey in technology began with a curiosity for how websites work, which quickly evolved into a full-fledged passion for coding and design. Over the years, I have honed my skills in HTML, CSS, JavaScript, and modern frameworks like React and Vue, allowing me to build responsive and user-friendly web applications.<br><br>
-                I believe that great design is not just about aesthetics but also about usability and accessibility. My approach to web development combines creativity with a strong focus on user experience, ensuring that every project I undertake is both beautiful and intuitive. I enjoy collaborating with designers, developers, and clients to bring ideas to life, and I am always eager to learn new technologies and best practices to stay ahead in this ever-evolving field.<br><br>
-                In addition to my technical skills, I am a strong communicator and a reliable team player. I thrive in collaborative environments where ideas are shared freely, and I am always willing to lend a helping hand or offer feedback to improve a project. My attention to detail and commitment to quality drive me to deliver work that not only meets but exceeds expectations.<br><br>
-                Outside of coding, I enjoy exploring new design trends, reading about emerging technologies, and contributing to open-source projects. I am also passionate about personal growth and continuous learning, regularly taking online courses and attending workshops to expand my knowledge.<br><br>
-                Thank you for visiting my portfolio. I am excited to connect with like-minded professionals and explore opportunities to create impactful digital solutions together. Let’s build something amazing!
-            </p>
-        </section> <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-2" /> <br>
+                <h2 class="text-3xl font-bold text-green-400 inline-block mb-2">About </h2>
+                <h2 class="text-3xl font-bold inline-block text-blue-400 mb-2"> Me</h2>
+                <p class="text-slate-300 text-center max-w-5xl">
+                    I am Naveen Kumar, a passionate and dedicated web developer with a keen interest in creating visually appealing and highly functional digital experiences. My journey in technology began with a curiosity for how websites work, which quickly evolved into a full-fledged passion for coding and design. Over the years, I have honed my skills in HTML, CSS, JavaScript, and modern frameworks like React and Vue, allowing me to build responsive and user-friendly web applications.<br><br>
+                    I believe that great design is not just about aesthetics but also about usability and accessibility. My approach to web development combines creativity with a strong focus on user experience, ensuring that every project I undertake is both beautiful and intuitive. I enjoy collaborating with designers, developers, and clients to bring ideas to life, and I am always eager to learn new technologies and best practices to stay ahead in this ever-evolving field.<br><br>
+                    In addition to my technical skills, I am a strong communicator and a reliable team player. I thrive in collaborative environments where ideas are shared freely, and I am always willing to lend a helping hand or offer feedback to improve a project. My attention to detail and commitment to quality drive me to deliver work that not only meets but exceeds expectations.<br><br>
+                    Outside of coding, I enjoy exploring new design trends, reading about emerging technologies, and contributing to open-source projects. I am also passionate about personal growth and continuous learning, regularly taking online courses and attending workshops to expand my knowledge.<br><br>
+                    Thank you for visiting my portfolio. I am excited to connect with like-minded professionals and explore opportunities to create impactful digital solutions together. Let’s build something amazing!
+                </p>
+            </div>
+        </section>
+        <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-2" /> <br>
 
-        <!-- Projects Section -->
         <section id="projects" class="mb-8 text-center">
-            <h2 class="text-3xl font-bold text-green-300 mb-2">Projects</h2>
-            <div class="grid gap-6 md:grid-cols-2 "  >
-                <article class="bg-slate-800 rounded-lg p-6 shadow">
+            <h2 class="text-3xl inline-block font-bold text-blue-400 mb-2">My</h2>
+            <h2 class="text-3xl font-bold inline-block text-green-300 mb-2">Projects</h2>
+            <div class="grid gap-6 md:grid-cols-2">
+                <article class="bg-slate-800 rounded-lg p-6 shadow e">
                     <h3 class="font-bold text-xl text-green-200 mb-1">BloodBank Management</h3>
                     <p class="text-slate-300">
                         BloodBank Management is a web application built using Django that streamlines the process of blood donation and management. The project features a robust search functionality, allowing users to quickly find available blood donors based on blood group and location. Individuals can easily register as donors, making their profiles accessible to those in need. The application also includes essential features such as donor registration, donor listing, and basic management tools for administrators. This project aims to simplify the connection between donors and recipients, making the process efficient and user-friendly.
                     </p>
-                    <!-- Fix GitHub logo placement in Projects section -->
-                    <!-- Replace each project link block like this: -->
-                    <a href="" class="flex items-center gap-2 mt-4 justify-center">
-                        <img src="github.png" class="h-8 w-8 hover:scale-110 transition" alt="GitHub Logo">
-                        <span class="text-green-300 font-semibold">Github Link</span>
+                    <a href="https://github.com/nn0343424/Blood-Bank-Django" class="flex items-center gap-2 mt-4 justify-center">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 -0.5 48 48" version="1.1">
+
+                            <title>Github-color</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                            </defs>
+                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Color-" transform="translate(-700.000000, -560.000000)" fill="#3E75C3">
+                                    <path d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560" id="Github">
+
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="hover:text-white text-green-300 font-semibold">Github Link</span>
                     </a>
                 </article>
                 <article class="bg-slate-800 rounded-lg p-6 shadow">
@@ -86,8 +126,22 @@
                         Task Tracker App is a productivity tool built with React and Firebase. It allows users to create, edit, and delete tasks, set deadlines, and organize their workflow efficiently. Real-time updates and notifications help users stay on top of their daily goals. The app features a clean UI, drag-and-drop task management, and user authentication for secure access.
                     </p>
                     <a href="" class="flex items-center gap-2 mt-4 justify-center">
-                        <img src="github.png" class="h-8 w-8 hover:scale-110 transition" alt="GitHub Logo">
-                        <span class="text-green-300 font-semibold">Github Link</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 -0.5 48 48" version="1.1">
+
+                            <title>Github-color</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                            </defs>
+                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Color-" transform="translate(-700.000000, -560.000000)" fill="#3E75C3">
+                                    <path d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560" id="Github">
+
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="hover:text-white text-green-300 font-semibold">Github Link</span>
                     </a>
                 </article>
                 <article class="bg-slate-800 rounded-lg p-6 shadow">
@@ -95,55 +149,305 @@
                     <p class="text-slate-300">
                         Portfolio Website is a personal branding project developed using Vue.js and Tailwind CSS. It showcases professional experience, skills, and projects in a visually appealing manner. The site is fully responsive, optimized for SEO, and includes a contact form for potential clients or employers to reach out. Custom animations and interactive sections enhance user engagement.
                     </p>
-                    <a href="" class="flex items-center gap-2 mt-4 justify-center">
-                        <img src="github.png" class="h-8 w-8 hover:scale-110 transition" alt="GitHub Logo">
-                        <span class="text-green-300 font-semibold">Github Link</span>
+                    <a href="https://github.com/nn0343424/protfolio" class="flex items-center gap-2 mt-4 justify-center">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 -0.5 48 48" version="1.1">
+
+                            <title>Github-color</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                            </defs>
+                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Color-" transform="translate(-700.000000, -560.000000)" fill="#3E75C3">
+                                    <path d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560" id="Github">
+
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <!-- <path d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z" fill="#EE513B"/>
+                        <path d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z" fill="white"/> -->
+                        <span class="hover:text-white text-green-300 font-semibold">Github Link</span>
                     </a>
-               
+
                 </article>
             </div>
-        </section> <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-8" /><br>
+        </section>
+        <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-8" /><br>
 
-        <!-- Skills Section -->
         <section id="skills" class="mb-8 text-center">
-            <h2 class="text-3xl font-bold text-green-300 mb-2">Skills</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-slate-200">
-                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">HTML</div>
-                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">Tailwind CSS</div>
-                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">JavaScript</div>
-                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">React</div>
-                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">Vue</div>
-                <div class="bg-slate-800 px-4 py-2 rounded shadow text-center">Django</div>
-            </div>
-        </section> <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-8" /><br>
+            <h2 class="text-3xl font-bold text-green-300 mb-4">Skills</h2>
 
-        <!-- Contact Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-slate-200 max-w-4xl mx-auto">
+                <div class="bg-slate-800 px-3 py-4 rounded shadow text-center">
+                    <h4 class="text-blue-400 mb-4 font-bold text-xl">Frontend</h4>
+
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="flex items-center gap-2">
+                            <svg class="h-5 w-5" fill="#E34F26" viewBox="0 0 384 512">
+                                <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                            </svg>
+                            HTML
+                        </span>
+
+                        <span class="flex items-center gap-2">
+                            <svg class="h-5 w-5" fill="#1572B6" viewBox="0 0 384 512">
+                                <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" />
+                            </svg>
+                            CSS
+                        </span>
+
+                        <span class="flex items-center gap-2">
+                            <svg class="h-5 w-5" fill="#06B6D4" viewBox="0 0 24 24">
+                                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624
+                                C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624
+                                C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624
+                                c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624
+                                C10.337,13.382,8.976,12,6.001,12z" />
+                            </svg>
+                            Tailwind CSS
+                        </span>
+
+                        <span class="flex items-center gap-2">
+                            <svg class="h-5 w-5" fill="#61DAFB" viewBox="0 0 512 512">
+                                <path d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6
+                                38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23
+                                116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3
+                                81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1
+                                7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5
+                                3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9
+                                92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3
+                                10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7z" />
+                            </svg>
+                            React
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 px-3 py-4 rounded shadow text-center">
+                    <h4 class="text-blue-400 mb-4 font-bold text-xl">Backend</h4>
+
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="flex items-center gap-2">
+                            <svg class="h-5 w-5" fill="#F7DF1E" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9
+                                1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71
+                                1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83
+                                1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0
+                                1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825
+                                1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054
+                                0-4.109 0-6.179l.004-.056z" />
+                            </svg>
+                            JavaScript
+                        </span>
+
+                        <span class="flex items-center gap-2">
+                            <svg class="h-5 w-5" fill="currentcolor" viewBox="0 0 220 230" xmlns="http://www.w3.org/2000/svg">
+                                <path xmlns="http://www.w3.org/2000/svg" d="M186.377012,94.197636 L186.377012,160.424478 C186.377012,183.243286 184.707519,194.187745 179.699037,203.649406 C175.060358,212.741266 168.937684,218.490548 156.323731,224.798721 L129.794937,212.183571 C142.410087,206.247593 148.531564,201.05481 152.427049,193.074749 C156.509231,184.91278 157.808923,175.451119 157.808923,150.593015 L157.808923,94.197636 L186.377012,94.197636 Z M140.928486,50.0787207 L140.928486,182.316986 C126.272844,185.099476 115.512688,186.212472 103.826231,186.212472 C68.9487718,186.212472 50.7686431,170.445031 50.7686431,140.205054 C50.7686431,111.079269 70.0629644,92.1583404 99.9295492,92.1583404 C104.567032,92.1583404 108.091519,92.5281423 112.359199,93.6411381 L112.359199,50.0787207 L140.928486,50.0787207 Z M102.713236,115.160254 C88.243093,115.160254 79.8944275,124.065418 79.8944275,139.647359 C79.8944275,154.860696 87.8720944,163.208164 102.527736,163.208164 C105.680028,163.208164 108.278215,163.022665 112.359199,162.467364 L112.359199,116.643052 C109.020212,115.531253 106.237722,115.160254 102.713236,115.160254 Z M186.377012,50.2307105 L186.377012,79.5419941 L157.808923,79.5419941 L157.808923,50.2307105 L186.377012,50.2307105 Z" fill="green"/>
+                            </svg>
+                            Django
+                        </span>
+
+                        <span class="flex items-center gap-2">
+                            <svg class="h-5 w-5" fill="none" stroke="white" stroke-width="1.5" viewBox="0 0 128 128">
+                                <path d="M28.6 76.6c3.3-3.4 6.4-6.9 9.5-10.4 3.6 4.2 7.2 8.4 10.9 12.5 2.7-3.6 5.4-7.3 8.2-10.9 3.6 4.2 7.2 8.4 10.9 12.5 6.2-8.2 12.2-16.4 18.3-24.6 2.1-2.8 4.3-5.6 6.5-8.4l6.5 8.4c6.2 8.1 12.3 16.2 18.3 24.4"/>
+                            </svg>
+                            Express
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 px-3 py-4 rounded shadow text-center">
+                    <h4 class="text-blue-400 mb-4 font-bold text-xl">Database</h4>
+
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="flex items-center gap-2">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 32 32"><title>file_type_mysql</title><path d="M8.785,6.865a3.055,3.055,0,0,0-.785.1V7h.038a6.461,6.461,0,0,0,.612.785c.154.306.288.611.441.917.019-.019.038-.039.038-.039a1.074,1.074,0,0,0,.4-.957,4.314,4.314,0,0,1-.23-.4c-.115-.191-.364-.287-.517-.44" style="fill:#5d87a1;fill-rule:evenodd"/><path d="M27.78,23.553a8.849,8.849,0,0,0-3.712.536c-.287.115-.745.115-.785.478.154.153.172.4.307.613a4.467,4.467,0,0,0,.995,1.167c.4.306.8.611,1.225.879.745.461,1.588.728,2.314,1.187.422.268.842.612,1.264.9.21.153.343.4.611.5v-.058a3.844,3.844,0,0,0-.291-.613c-.191-.19-.383-.363-.575-.554a9.118,9.118,0,0,0-1.99-1.932c-.613-.422-1.953-1-2.2-1.7l-.039-.039a7.69,7.69,0,0,0,1.321-.308c.65-.172,1.243-.133,1.912-.3.307-.077.862-.268.862-.268v-.3c-.342-.34-.587-.795-.947-1.116a25.338,25.338,0,0,0-3.122-2.328c-.587-.379-1.344-.623-1.969-.946-.226-.114-.6-.17-.737-.36a7.594,7.594,0,0,1-.776-1.457c-.548-1.04-1.079-2.193-1.551-3.293a20.236,20.236,0,0,0-.965-2.157A19.078,19.078,0,0,0,11.609,5a9.07,9.07,0,0,0-2.421-.776c-.474-.02-.946-.057-1.419-.075A7.55,7.55,0,0,1,6.9,3.485C5.818,2.8,3.038,1.328,2.242,3.277,1.732,4.508,3,5.718,3.435,6.343A8.866,8.866,0,0,1,4.4,7.762c.133.322.171.663.3,1A22.556,22.556,0,0,0,5.687,11.3a8.946,8.946,0,0,0,.7,1.172c.153.209.417.3.474.645a5.421,5.421,0,0,0-.436,1.419,8.336,8.336,0,0,0,.549,6.358c.3.473,1.022,1.514,1.987,1.116.851-.34.662-1.419.908-2.364.056-.229.019-.379.132-.53V19.3s.483,1.061.723,1.6a10.813,10.813,0,0,0,2.4,2.59A3.514,3.514,0,0,1,14,24.657V25h.427A1.054,1.054,0,0,0,14,24.212a9.4,9.4,0,0,1-.959-1.16,24.992,24.992,0,0,1-2.064-3.519c-.3-.6-.553-1.258-.793-1.857-.11-.231-.11-.58-.295-.7a7.266,7.266,0,0,0-.884,1.313,11.419,11.419,0,0,0-.517,2.921c-.073.02-.037,0-.073.038-.589-.155-.792-.792-1.014-1.332a8.756,8.756,0,0,1-.166-5.164c.128-.405.683-1.681.461-2.068-.111-.369-.48-.58-.682-.871a7.767,7.767,0,0,1-.663-1.237C5.912,9.5,5.69,8.3,5.212,7.216a10.4,10.4,0,0,0-.921-1.489A9.586,9.586,0,0,1,3.276,4.22c-.092-.213-.221-.561-.074-.793a.3.3,0,0,1,.259-.252c.238-.212.921.058,1.16.174a9.2,9.2,0,0,1,1.824.967c.258.194.866.685.866.685h.18c.612.133,1.3.037,1.876.21a12.247,12.247,0,0,1,2.755,1.32,16.981,16.981,0,0,1,5.969,6.545c.23.439.327.842.537,1.3.4.94.9,1.9,1.3,2.814a12.578,12.578,0,0,0,1.36,2.564c.286.4,1.435.612,1.952.822a13.7,13.7,0,0,1,1.32.535c.651.4,1.3.861,1.913,1.3.305.23,1.262.708,1.32,1.091" style="fill:#23badc;fill-rule:evenodd"/></svg>
+                            MySql
+                        </span>
+
+                        <span class="flex items-center gap-2">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 1024 1024">
+                                <circle cx="512" cy="512" r="512" style="fill:#13aa52"/>
+                                <path d="M648.86 449.44c-32.34-142.73-108.77-189.66-117-207.59-9-12.65-18.12-35.15-18.12-35.15-.15-.38-.39-1.05-.67-1.7-.93 12.65-1.41 17.53-13.37 30.29-18.52 14.48-113.54 94.21-121.27 256.37-7.21 151.24 109.25 241.36 125 252.85l1.79 1.27v-.11c.1.76 5 36 8.44 73.34H526a726.68 726.68 0 0 1 13-78.53l1-.65a204.48 204.48 0 0 0 20.11-16.45l.72-.65c33.48-30.93 93.67-102.47 93.08-216.53a347.07 347.07 0 0 0-5.05-56.76zM512.35 659.12s0-212.12 7-212.08c5.46 0 12.53 273.61 12.53 273.61-9.72-1.17-19.53-45.03-19.53-61.53z" style="fill:#fff"/>
+                            </svg>
+                            MongoDB
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 32 32"><defs><linearGradient id="a" x1="-118.318" y1="45.638" x2="-116.751" y2="45.638" gradientTransform="matrix(0, 11.486, 11.486, 0, -510.889, 1363.307)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#97d9f6"/><stop offset="0.92" stop-color="#0f80cc"/><stop offset="1" stop-color="#0f80cc"/></linearGradient></defs><title>file_type_sqlite</title><path d="M23.192,3.242H5.623A2.147,2.147,0,0,0,3.482,5.383V24.759A2.147,2.147,0,0,0,5.623,26.9H17.195C17.063,21.142,19.03,9.968,23.192,3.242Z" style="fill:#0f80cc"/><path d="M22.554,3.867H5.623A1.518,1.518,0,0,0,4.107,5.383V23.345a42.01,42.01,0,0,1,13.569-2.684A123.555,123.555,0,0,1,22.554,3.867Z" style="fill:url(#a)"/><path d="M27.29,2.608c-1.2-1.073-2.66-.642-4.1.634-.213.19-.426.4-.638.625A25.4,25.4,0,0,0,17.1,15a10.178,10.178,0,0,1,.634,1.822c.036.14.069.272.1.384.062.265.1.437.1.437s-.022-.083-.113-.346l-.059-.17c-.01-.027-.023-.059-.038-.094-.16-.373-.6-1.16-.8-1.5-.167.493-.315.954-.438,1.371a12.131,12.131,0,0,1,.908,2.8s-.03-.115-.171-.515a19.037,19.037,0,0,0-.9-1.708,4.037,4.037,0,0,0-.264,1.724,6.009,6.009,0,0,1,.493,1.383c.334,1.283.566,2.846.566,2.846s.008.1.02.263a26.145,26.145,0,0,0,.065,3.205,11.362,11.362,0,0,0,.584,3.1l.18-.1a13.859,13.859,0,0,1-.478-4.628,35.269,35.269,0,0,1,1.938-9.688c2.01-5.308,4.8-9.568,7.35-11.6-2.326,2.1-5.474,8.9-6.417,11.418a45.656,45.656,0,0,0-2.254,8A6.211,6.211,0,0,1,21.39,20s1.233-1.521,2.674-3.693a26.206,26.206,0,0,0-2.755.733c-.7.294-.889.394-.889.394a23.939,23.939,0,0,1,4.215-2.007c2.676-4.215,5.592-10.2,2.656-12.824" style="fill:#003b57"/></svg>
+                            SQLite
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 px-3 py-4 rounded shadow text-center">
+                    <h4 class="text-blue-400 mb-4 font-bold text-xl">Tools</h4>
+
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="flex items-center gap-2">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 32 32" fill="none">
+                                <path d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z" fill="#EE513B"/>
+                                <path d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z" fill="white"/>
+                            </svg>
+                            Git
+                        </span>
+
+
+                        <span class="flex items-center gap-4">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 -0.5 48 48" version="1.1">
+
+                            <title>Github-color</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                            </defs>
+                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Color-" transform="translate(-700.000000, -560.000000)" fill="#3E75C3">
+                                    <path d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560" id="Github">
+
+                                    </path>
+                                </g>
+                            </g>
+                          </svg>
+                            
+                            Github
+                        </span>
+
+                        <span class="flex items-center gap-2">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 32 32"><title>file_type_vscode</title><path d="M29.01,5.03,23.244,2.254a1.742,1.742,0,0,0-1.989.338L2.38,19.8A1.166,1.166,0,0,0,2.3,21.447c.025.027.05.053.077.077l1.541,1.4a1.165,1.165,0,0,0,1.489.066L28.142,5.75A1.158,1.158,0,0,1,30,6.672V6.605A1.748,1.748,0,0,0,29.01,5.03Z" style="fill:#0065a9"/><path d="M29.01,26.97l-5.766,2.777a1.745,1.745,0,0,1-1.989-.338L2.38,12.2A1.166,1.166,0,0,1,2.3,10.553c.025-.027.05-.053.077-.077l1.541-1.4A1.165,1.165,0,0,1,5.41,9.01L28.142,26.25A1.158,1.158,0,0,0,30,25.328V25.4A1.749,1.749,0,0,1,29.01,26.97Z" style="fill:#007acc"/><path d="M23.244,29.747a1.745,1.745,0,0,1-1.989-.338A1.025,1.025,0,0,0,23,28.684V3.316a1.024,1.024,0,0,0-1.749-.724,1.744,1.744,0,0,1,1.989-.339l5.765,2.772A1.748,1.748,0,0,1,30,6.6V25.4a1.748,1.748,0,0,1-.991,1.576Z" style="fill:#1f9cf0"/></svg>
+                            VSCode
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 32 32" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16C16 13.7909 17.7909 12 20 12C22.2091 12 24 13.7909 24 16C24 18.2091 22.2091 20 20 20C17.7909 20 16 18.2091 16 16Z" fill="#1ABCFE"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 24C8 21.7909 9.79086 20 12 20H16V24C16 26.2091 14.2091 28 12 28C9.79086 28 8 26.2091 8 24Z" fill="#0ACF83"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 4V12H20C22.2091 12 24 10.2091 24 8C24 5.79086 22.2091 4 20 4H16Z" fill="#FF7262"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8C8 10.2091 9.79086 12 12 12H16V4H12C9.79086 4 8 5.79086 8 8Z" fill="#F24E1E"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C8 18.2091 9.79086 20 12 20H16V12H12C9.79086 12 8 13.7909 8 16Z" fill="#A259FF"/>
+                            </svg>
+                            Figma
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <hr class="bg-gradient-to-r from-green-400 to-green-600 h-0.5 border-0 rounded-full shadow my-8" /><br>
+
         <section id="contact" class="mb-8 text-center">
-            <h2 class="text-3xl font-bold text-green-300 mb-2">Contact</h2>
+
+            <h2 class="text-3xl font-bold inline-block text-green-300 mb-2">Reach </h2>
+            <h2 class="text-3xl font-bold inline-block text-blue-400 mb-2">Out </h2>
             <div class="max-w-md mx-auto rounded-lg bg-slate-800 p-6 shadow">
                 <div class="flex items-center justify-around gap-4">
                     <a href="https://www.linkedin.com/in/naveenkumar2013" target="_blank" aria-label="LinkedIn">
-                        <img src="linkdin.png" alt="LinkedIn" class="h-8 w-8 hover:scale-110 transition" />
+                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 16 16" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+                        <p class="text-white">Linkedin</p>
                     </a>
                     <a href="https://github.com/nn0343424" target="_blank" aria-label="GitHub">
-                        <img src="github.png" alt="GitHub" class="h-8 w-8 hover:scale-110 transition" />
-                    </a>
-                    <a href="mailto:naveenkumar1307@yahoo.com" aria-label="Email">
-                        <img src="email.png" alt="Email" class="h-8 w-8 hover:scale-110 transition" />
-                    </a>
-                    <a href="https://wa.me/+918317442013" aria-label="Whatsapp">
-                        <img src="whastapp.png" alt="Whatsapp" class="h-8 w-8 hover:scale-110 transition" />
-                    </a>
+                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 -0.5 48 48" version="1.1">
+
+                            <title>Github-color</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                            </defs>
+                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Color-" transform="translate(-700.000000, -560.000000)" fill="#3E75C3">
+                                    <path d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560" id="Github">
+
+                                    </path>
+                                </g>
+                            </g>
+                             </svg>
+                             <p class="text-white">Github</p>
+                        <a href="mailto:naveenkumar1307@yahoo.com" aria-label="Email">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="_x36_" viewBox="0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256.0002" y1="347.8895" x2="256.0002" y2="-8.003553e-011">
+                                        <stop offset="0" style="stop-color:#DA9621"/>
+                                        <stop offset="0.7685" style="stop-color:#EAA12F"/>
+                                    </linearGradient>
+                                    <path style="fill:url(#SVGID_1_);" d="M511.972,170.467v11.507c-0.6,0.427-1.372,0.937-2.143,1.448l-19.117,13.041
+                                    c-1.285,0.853-2.828,1.875-4.371,2.984c-7.973,5.283-18.345,12.358-25.203,16.876L293.376,329.769l-5.315,3.58l-15.602,10.569
+                                    c-1.972,1.278-4.286,2.301-6.858,2.983c-1.029,0.34-2.229,0.511-3.343,0.681c-0.172,0.085-0.343,0.085-0.428,0.085
+                                    c-1.972,0.256-3.943,0.256-5.83,0.171c-1.886,0.085-3.857,0.085-5.829-0.171c-1.285-0.171-2.572-0.427-3.772-0.767
+                                    c-2.572-0.681-4.886-1.705-6.858-2.983l-7.029-4.774l-8.572-5.795L50.862,216.324c-1.886-1.279-4.029-2.728-6.429-4.262
+                                    c-6-4.006-13.03-8.779-18.774-12.614c-1.543-1.109-3.086-2.131-4.372-2.984L2.171,183.423c-0.771-0.511-1.543-1.022-2.143-1.448
+                                    v-11.507c0-1.96,0.257-3.494,0.686-4.943c0-0.084,0.086-0.084,0.086-0.084c0.429-0.341,0.857-0.597,1.371-0.939l6.172-4.262
+                                    l12.944-8.779c8.143-5.454,21.431-14.489,29.574-19.859L239.541,4.007c4.544-2.898,10.544-4.262,16.459-3.921
+                                    c0.6,0,1.114-0.085,1.715-0.085h0.086c5.315,0,10.63,1.365,14.659,4.007l188.679,127.594c6.772,4.432,17.059,11.421,25.031,16.792
+                                    c1.629,1.107,3.172,2.131,4.543,3.067l12.944,8.779l6.172,4.262c0.514,0.341,0.943,0.597,1.371,0.939
+                                    C511.715,166.888,511.972,168.507,511.972,170.467z"/>
+                                    <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="256.0005" y1="398.9169" x2="256.0005" y2="51.0644">
+                                        <stop offset="0" style="stop-color:#DA9621"/>
+                                        <stop offset="0.7685" style="stop-color:#EAA12F"/>
+                                    </linearGradient>
+                                    <path style="fill:url(#SVGID_2_);" d="M512,221.49v11.441c-0.625,0.443-1.429,0.976-2.141,1.508l-19.179,13.037
+                                    c-8.116,5.41-21.407,14.455-29.524,19.866L272.502,394.875c-2.051,1.33-4.371,2.305-6.868,3.015
+                                    c-3.032,0.887-6.422,1.153-9.633,0.975c-3.211,0.178-6.601-0.089-9.633-0.975c-2.498-0.71-4.817-1.685-6.868-3.015L50.845,267.341
+                                    c-8.117-5.411-21.408-14.456-29.524-19.866L2.142,234.439c-0.712-0.533-1.516-1.065-2.141-1.508V221.49
+                                    c0-1.951,0.268-3.548,0.714-4.966c0-0.089,0.089-0.089,0.089-0.089c0.446-0.355,0.892-0.622,1.337-0.977l6.245-4.257l12.934-8.78
+                                    c8.116-5.41,21.407-14.455,29.524-19.866L239.499,55.023c4.549-2.927,10.614-4.258,16.501-3.903
+                                    c5.887-0.355,12.042,0.975,16.501,3.903l188.655,127.532c8.117,5.411,21.408,14.456,29.524,19.866l12.934,8.78l6.245,4.257
+                                    c0.445,0.355,0.891,0.621,1.337,0.977C511.732,217.853,512,219.539,512,221.49z"/>
+                                    <path style="fill:#CC8529;" d="M262.258,314.513v35.968h-1.029l-11.487,0.767H0.028V173.792c0-1.96,0.257-3.58,0.686-4.944
+                                    c0-0.085,0.086-0.085,0.086-0.085c0.943-2.983,2.829-4.688,5.315-5.114l10.716,6.307l5.057,2.983l23.06,13.553l1.2,0.681
+                                    l14.659,8.609l166.819,98.359l0.343,0.171l33.089,19.433L262.258,314.513z"/>
+                                    <g>
+                                        <path style="fill:#F6B75A;" d="M266.715,336.247c0,0.085-1.714,1.279-4.457,3.239c-1.715,1.108-3.858,2.558-6.258,4.262
+                                        c-1.2,0.767-2.486,1.619-3.857,2.557l-1.972,1.363l-3.772,2.557l-1.629,1.023l-26.66,17.984c-2.829,1.875-5.658,3.835-8.229,5.626
+                                        c-4.886,3.324-8.916,6.051-10.287,6.903c-1.972,1.449-10.201,6.99-18.345,12.529l-44.577,30.088l-0.172,0.171l-0.085,0.085
+                                        L27.031,498.447c-1.886,1.279-3.943,2.642-5.915,4.006c-1.115,0.767-2.229,1.449-3.343,2.216H8.515
+                                        c-4.972,0-7.801-1.108-8.401-2.983c0-0.085,0-0.085,0-0.085c0-0.341-0.086-0.597,0-1.023c-0.086-0.512-0.086-1.023-0.086-1.62
+                                        V173.792c0-1.96,0.257-3.58,0.686-4.944c0-0.085,0.086-0.085,0.086-0.085c0.943-2.983,2.829-4.688,5.315-5.114
+                                        c0.771-0.256,1.457-0.256,2.229-0.171c1.886,0.085,4.029,0.938,6.344,2.472l30.346,20.456l1.114,0.767l13.116,8.864
+                                        c0.257,0.171,0.514,0.341,0.771,0.512c8.058,5.455,20.745,14.064,28.632,19.348l153.446,103.729
+                                        c0.172,0.085,0.343,0.171,0.429,0.256c0.257,0.171,0.514,0.341,0.771,0.512c2.057,1.363,4.029,2.728,5.829,3.92
+                                        c3.001,1.96,5.401,3.665,6.858,4.688c0.857,0.512,1.458,0.852,1.543,0.937c0.343,0.255,2.486,1.705,4.715,3.324
+                                        c0.086,0,0.086,0.085,0.171,0.085C264.744,334.968,266.715,336.161,266.715,336.247z"/>
+                                        <g>
+                                            <path style="fill:#F0A642;" d="M511.865,171.974c0.074,1,0.134,2.92,0.134,4.267v320.232c0,1.347,0,2.708,0,3.025
+                                            c0,0.317-0.089,1.248-0.089,1.419c0,0.171,0,0.311,0,0.666c0,0,0,0.02,0,0.044c0,0.024-0.783,0.723-1.74,1.551
+                                            c-0.957,0.829-7.747,1.507-9.094,1.507h-4.378c-1.347,0-3.365-0.612-4.486-1.359l-5.204-3.489
+                                            c-1.12-0.748-2.95-1.976-4.066-2.731L332.776,395.641c-1.116-0.754-2.942-1.988-4.058-2.742l-14.324-9.753
+                                            c-1.112-0.76-2.935-1.999-4.05-2.754l-14.412-9.754c-1.113-0.758-2.938-1.994-4.055-2.747l-24.216-16.33
+                                            c-1.117-0.753-2.944-1.984-4.062-2.736l-1.734-1.167c-1.117-0.752-2.95-1.976-4.072-2.72c0,0-0.635-0.421-1.795-1.219
+                                            c-6.155-4.257-10.704-7.362-10.704-7.451c0-0.089,1.963-1.329,4.282-2.926c2.318-1.597,2.885-1.986,2.885-1.986
+                                            c1.111-0.762,2.161-1.484,2.332-1.607c0.172-0.122,2.109-1.383,3.214-2.152c0,0,5.125-3.567,10.657-7.204
+                                            c0.268-0.178,0.268-0.178,0.268-0.178c0.294-0.195,0.595-0.394,0.668-0.443c0.073-0.049,0.954-0.617,1.74-1.153
+                                            c0.785-0.536,2.341-1.592,3.457-2.346l146.508-98.984c1.116-0.754,2.941-1.989,4.056-2.745l25.377-17.123
+                                            c1.117-0.753,2.944-1.985,4.06-2.739l40.451-27.324c1.116-0.754,3-1.892,4.187-2.529c0,0,1.065-0.637,2.169-0.881
+                                            c1.104-0.244,3.079-0.189,4.389,0.123l3.792,2.662C510.562,167.836,511.791,170.974,511.865,171.974z"/>
+                                        </g>
+                                    </g>
+                                    <path style="fill:#CC8529;" d="M511.999,458.657v40.265c0,0.62,0,1.153-0.089,1.685c0.089,0.355,0,0.621,0,0.976c0,0,0,0,0,0.089
+                                    c-0.625,1.862-3.48,3.014-8.385,3.014H46.383l90.001-80.084l0.089-0.089l112.657-100.216l10.972-9.668l2.942-2.661l9.723,5.677
+                                    L511.999,458.657z"/>
+                                    <path style="fill:#F6AF47;" d="M511.999,497.414v1.508c0,0.62,0,1.153-0.089,1.685c0.089,0.355,0,0.621,0,0.976c0,0,0,0,0,0.089
+                                    c-0.625,1.862-3.48,3.014-8.385,3.014H8.474c-4.905,0-7.76-1.152-8.385-3.014c0-0.089,0-0.089,0-0.089c0-0.355-0.089-0.621,0-0.976
+                                    C0,500.075,0,499.542,0,498.922v-1.508c0.803-1.064,1.963-2.128,3.479-3.193L241.549,320.57c0.089,0,0.089-0.088,0.179-0.176
+                                    c0.268-0.178,0.536-0.355,0.803-0.532c4.905-3.46,9.901-5.855,13.469-6.74c1.249,0.354,2.586,0.797,4.104,1.507
+                                    c2.854,1.153,6.154,3.016,9.365,5.233c0.356,0.265,0.624,0.443,0.981,0.708l238.069,173.651
+                                    C510.035,495.374,511.195,496.438,511.999,497.414z"/>
+                                </g>
+                            </svg>
+                            <p class="text-white">Email</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="max-w-5xl mx-auto my-8 p-4 bg-slate-800 text-center rounded shadow text-green-300">
         <p>&copy; 2025 Naveen Kumar. All rights reserved.</p>
-        <p>Made With Love</p>
+        <p>Designed & built with ❤️ by Naveen Kumar.
+        </p>
+        <p>Thank you for visiting my portfolio!</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
