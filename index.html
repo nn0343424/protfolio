@@ -7,11 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <div class="fixed top-0 left-0 right-0 h-1 bg-green-500 z-50 origin-left" style="transform: scaleX(0.15000);"></div>
+    
+   
+ <style>
+
+     body::-webkit-scrollbar {
+       display: none;               
+     }
+ </style>
+
+
+   
 </head>
 
-<body class="bg-slate-900 font-sans">
-    <div id="scroll-bar" class="fixed top-0 left-0 right-0 h-1 bg-green-500 z-50 origin-left" style="transform: scaleX(0);"></div>
+<body class="bg-slate-900 font-sans overflow-y-scroll scrollbar-hide" >
+   <!-- Vertical scroll progress bar on the right -->
+<div id="scroll-progress" class="fixed top-55 right-0 w-1 h-40 bg-slate-800 z-50">
+  <div id="scroll-fill" class="w-full bg-green-400 rounded-lg" style="height:0%;"></div>
+</div>
+
+   
+   
     <nav class="bg-slate-800 rounded-lg mx-auto max-w-5xl mt-6 shadow flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4">
         <div class="flex items-center gap-3 mb-4 md:mb-0">
             <span class="text-green-400 font-extrabold text-2xl">&lt;NK./&gt;</span>
@@ -61,7 +77,11 @@
             </div>
             <p class="text-lg text-green-200 mb-4">Welcome to my portfolio!</p>
             <p class="text-slate-300 max-w-4xl text-center">
-                I am passionate about web development and design, always striving to create beautiful and functional digital experiences. Here you’ll find my projects, skills, and a little about me. I enjoy learning new technologies and collaborating on creative solutions. Thank you for visiting—let’s build something amazing together!
+                Here, you'll find a glimpse into my work and what drives me. 
+                I'm always eager to collaborate and turn ideas into reality.
+                 Here you’ll find my projects, skills, and a little about me.
+                  I enjoy learning new technologies and collaborating on creative solutions. 
+                  Thank you for visiting—let’s build something amazing together!
             </p>
             <div class="flex justify-center items-center w-full my-4">
                 <a href="resume.pdf" target="_blank" rel="noopener" class="inline-block">
@@ -82,11 +102,11 @@
                 <h2 class="text-3xl font-bold text-green-400 inline-block mb-2">About </h2>
                 <h2 class="text-3xl font-bold inline-block text-blue-400 mb-2"> Me</h2>
                 <p class="text-slate-300 text-center max-w-5xl">
-                    I am Naveen Kumar, a passionate and dedicated web developer with a keen interest in creating visually appealing and highly functional digital experiences. My journey in technology began with a curiosity for how websites work, which quickly evolved into a full-fledged passion for coding and design. Over the years, I have honed my skills in HTML, CSS, JavaScript, and modern frameworks like React and Vue, allowing me to build responsive and user-friendly web applications.<br><br>
-                    I believe that great design is not just about aesthetics but also about usability and accessibility. My approach to web development combines creativity with a strong focus on user experience, ensuring that every project I undertake is both beautiful and intuitive. I enjoy collaborating with designers, developers, and clients to bring ideas to life, and I am always eager to learn new technologies and best practices to stay ahead in this ever-evolving field.<br><br>
-                    In addition to my technical skills, I am a strong communicator and a reliable team player. I thrive in collaborative environments where ideas are shared freely, and I am always willing to lend a helping hand or offer feedback to improve a project. My attention to detail and commitment to quality drive me to deliver work that not only meets but exceeds expectations.<br><br>
-                    Outside of coding, I enjoy exploring new design trends, reading about emerging technologies, and contributing to open-source projects. I am also passionate about personal growth and continuous learning, regularly taking online courses and attending workshops to expand my knowledge.<br><br>
-                    Thank you for visiting my portfolio. I am excited to connect with like-minded professionals and explore opportunities to create impactful digital solutions together. Let’s build something amazing!
+                    I'm Naveen Kumar, a final-year Computer Science and Engineering student at Nitte Meenakshi College, Bengaluru. My passion lies in crafting visually appealing and highly functional digital experiences. What started as pure curiosity has blossomed into a full-fledged drive for coding and design. I build responsive, user-friendly applications, leveraging skills in HTML, CSS, JavaScript, and modern frameworks like React and Vue.
+
+My philosophy centers on creating solutions that are both intuitive and beautiful, always with the user at heart. I thrive on collaboration, constantly exploring new technologies, and am committed to delivering exceptional quality.
+
+Beyond academics and projects, I'm a strong communicator and a reliable team player, always eager to contribute and learn. I enjoy delving into new design trends, researching emerging tech, and contributing to open-source initiatives. My journey is one of continuous growth and discovery.
                 </p>
             </div>
         </section>
