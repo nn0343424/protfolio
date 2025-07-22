@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
@@ -20,12 +20,19 @@
    
 </head>
 
-<body class="bg-slate-900 font-sans overflow-y-scroll scrollbar-hide" >
-   <!-- Vertical scroll progress bar on the right -->
-<div id="scroll-progress" class="fixed top-55 right-0 w-1 h-40 bg-slate-800 z-50">
+<!-- <body class="bg-slate-900 font-sans overflow-y-scroll " >
+   Vertical scroll progress bar on the right -->
+<!-- <div id="scroll-progress" class="fixed top-55 right-0 w-1 h-40 bg-slate-800 z-50">
   <div id="scroll-fill" class="w-full bg-green-400 rounded-lg" style="height:0%;"></div>
-</div>
+</div> -->
 
+
+<body class="bg-slate-900 font-sans overflow-y-scroll p-4 space-y-10">
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"  class="fixed top-50 right-0 h-40 w-1 sm:w-1.5 md:w-2 bg-slate-800 z-50 pointer-events-none">
+  <div id="scroll-fill" class="w-full bg-green-400 rounded-lg" style="height: 0%;"></div>
+</div>
    
    
     <nav class="bg-slate-800 rounded-lg mx-auto max-w-5xl mt-6 shadow flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4">
@@ -69,7 +76,8 @@
     </nav>
 
 
-    <main class="max-w-5xl mx-auto px-2 sm:px-4 ">
+
+    <main class="max-w-5xl p-4 space-y-10 mx-auto px-2 sm:px-4 ">
         <section id="home" class="text-center mt-10 mb-8">
             <div>
                 <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-400 mb-2 drop-shadow-lg inline-block">Hey!</h1>
@@ -467,7 +475,14 @@ Beyond academics and projects, I'm a strong communicator and a reliable team pla
         <p>Thank you for visiting my portfolio!</p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="index.js">  
+     document.addEventListener("scroll", () => {
+    const scrollFill = document.getElementById("scroll-fill");
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = (scrollTop / scrollHeight) * 100;
+    scrollFill.style.height = progress + "%";
+  });</script>
 </body>
 
 </html>

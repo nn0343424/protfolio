@@ -1,15 +1,7 @@
-
-  window.addEventListener("scroll", function () {
-    const fill = document.getElementById("scroll-fill");
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = docHeight ? (scrollTop / docHeight) * 100 : 0;
-
-    fill.style.height = `${scrollPercent}%`;
+ document.addEventListener("scroll", () => {
+    const scrollFill = document.getElementById("scroll-fill");
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = (scrollTop / scrollHeight) * 100;
+    scrollFill.style.height = progress + "%";
   });
-
-  // Initialize on page load
-  window.dispatchEvent(new Event("scroll"));
-
-  
-
